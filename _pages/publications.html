@@ -1,36 +1,55 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
+<div class="publications">
+
+  <h2>Publications</h2>
+
+  <p><a href="https://scholar.google.com/citations?user=cALMlCcAAAAJ&hl=tr" target="_blank">Google Scholar Profile</a></p>
+
+  <p><strong><a href="/files/NERCCIP-CCS2025.pdf" target="_blank" rel="noopener">
+  The Challenges and Opportunities with Cybersecurity Regulations: A Case Study of the US Electric Power Sector
+  </a></strong><br>
+  <strong>Sena Sahin<strong>, Burak Sahin, Robin Berthier, Kate Davis, Saman Zonouz, and Frank Li.<br>
+  <em>ACM Conference on Computer and Communications Security (CCS)</em>, <strong>2025</strong>. (acceptance rate: 14%)</p>
+
+  <p><strong><a href="/files/SuspiciousLoginNotificationNDSS2025.pdf" target="_blank" rel="noopener">
+  Was This You? Investigating the Design Considerations for Suspicious Login Notifications
+  </a></strong><br>
+  <strong>Sena Sahin<strong>, Burak Sahin, and Frank Li.<br>
+  <em>Network and Distributed System Security Symposium (NDSS)</em>, <strong>2025</strong>. (acceptance rate: 16%)</p>
+
+  <p><strong><a href="/files/PasswordMasking_CCS24.pdf" target="_blank" rel="noopener">
+  Unmasking the Security and Usability of Password Masking
+  </a></strong><br>
+  Yuqi Hu, Suood Al Roomi, <strong>Sena Sahin<strong>, and Frank Li.<br>
+  <em>ACM Conference on Computer and Communications Security (CCS)</em>, <strong>2024</strong>. (acceptance rate: 17%) <strong>Distinguished Paper Award</strong></p>
+
+  <p><strong><a href="/files/PasswordPolicy-IEEES&P2023.pdf" target="_blank" rel="noopener">
+  Investigating the Password Policy Practices of Website Administrators
+  </a></strong><br>
+  <strong>Sena Sahin<strong>, Suood Al Roomi, Tara Poteat, and Frank Li.<br>
+  <em>IEEE Symposium on Security and Privacy (IEEE S&amp;P)</em>, <strong>2023</strong>. (acceptance rate: 17%)</p>
+
+  <p><strong><a href="/files/Typotolerant.pdf" target="_blank" rel="noopener">
+  Don’t Forget the Stuffing! Revisiting the Security Impact of Typo-Tolerant Password Authentication
+  </a></strong><br>
+  <strong>Sena Sahin<strong> and Frank Li.<br>
+  <em>ACM Conference on Computer and Communications Security (CCS)</em>, <strong>2021</strong>. (acceptance rate: 22%)</p>
+
+</div>
+
+
+
+<!-- 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
+ -->
 
 
