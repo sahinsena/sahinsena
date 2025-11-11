@@ -6,24 +6,20 @@ author_profile: true
 ---
 
 {% assign talks = site.talks | sort: 'date' | reverse %}
-{% assign current_year = "" %}
 
-{% for t in talks %}
-  {% assign y = t.date | date: "%Y" %}
-  {% if y != current_year %}
-<h2>{{ y }}</h2>
-{% assign current_year = y %}
-  {% endif %}
-
-<p>
-  <strong>{{ t.title }}</strong><br>
-  {% if t.venue %}<em>{{ t.venue }}</em>{% endif %}{% if t.location %}{% if t.venue %}, {% endif %}{{ t.location }}{% endif %}
-  {% if t.date %} — {{ t.date | date: "%Y" }}{% endif %}
-  <!-- For full dates instead of year-only, replace previous with: {{ t.date | date: "%B %-d, %Y" }} -->
-  {% if t.slides %}<br><a href="{{ t.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
-  {% if t.video %}{% if t.slides %} · {% endif %}<a href="{{ t.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
-</p>
-{% endfor %}
+<div class="talks-list">
+  {% for t in talks %}
+    <p>
+      <strong>{{ t.title }}</strong><br>
+      {% if t.venue %}<em>{{ t.venue }}</em>{% endif %}{% if t.location %}{% if t.venue %}, {% endif %}{{ t.location }}{% endif %}
+      {% if t.date %} — {{ t.date | date: "%Y" }}{% endif %}
+      <!-- For full Month Day, Year, replace the previous line with:
+           {{ t.date | date: "%B %-d, %Y" }} -->
+      {% if t.slides %}<br><a href="{{ t.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+      {% if t.video %}{% if t.slides %} · {% endif %}<a href="{{ t.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+    </p>
+  {% endfor %}
+</div>
 
 
 
