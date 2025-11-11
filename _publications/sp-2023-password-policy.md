@@ -10,5 +10,5 @@ citation: "Sahin, S., Al Roomi, S., Poteat, T., and Li, F. Investigating the Pas
 ---
 
 **Acceptance rate:** 17%.  
-Short description or abstract goes here (optional).
+
 
