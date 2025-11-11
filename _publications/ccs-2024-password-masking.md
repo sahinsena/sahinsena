@@ -10,4 +10,3 @@ citation: "Hu, Y., Al Roomi, S., Sahin, S., and Li, F. Unmasking the Security an
 ---
 
 **Acceptance rate:** 17%. **Distinguished Paper Award.**  
-Short description or abstract goes here (optional).
